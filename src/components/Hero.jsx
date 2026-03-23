@@ -25,7 +25,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://github.com/aurelie-hoslet/sewingbox-website/releases/download/v1.0.0/Sewing%20Box%20Setup%201.0.0.exe"
+            <a href="https://github.com/aurelie-hoslet/sewingbox-website/releases/download/v1.0.0/Sewing.Box.Setup.1.0.0.exe"
               className="flex items-center justify-center gap-2 bg-rose text-white font-bold px-8 py-4 rounded-2xl text-lg shadow-lg hover:bg-rose-dark hover:shadow-xl transition-all hover:-translate-y-0.5">
               <span>⬇️</span> Télécharger Sewing Box
             </a>
