@@ -7,7 +7,7 @@ export default function Navbar() {
     { label: 'Fonctionnalités', href: '#features' },
     { label: 'Aperçu', href: '#screenshots' },
     { label: 'FAQ', href: '#faq' },
-    { label: 'Contact', href: '#footer' },
+    { label: 'Contact', href: '#contact' },
   ]
 
   return (
