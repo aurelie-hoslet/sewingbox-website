@@ -2,28 +2,40 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'Sewing Box est-il vraiment gratuit ?',
-    a: 'Oui, complètement gratuit. Pas de formule premium, pas d\'abonnement caché, pas de limite. L\'application est open-source et le restera.',
+    q: 'Combien coûte Sewing Box ?',
+    a: 'En phase de développement, Sewing Box est disponible gratuitement. Les mises à jour vous seront proposées normalement, sans interruption. Si l\'application vous est utile et vous apporte satisfaction, il vous sera possible d\'offrir un café à la créatrice. ☕',
   },
   {
     q: 'Mes données sont-elles en sécurité ?',
-    a: 'Absolument. Sewing Box fonctionne entièrement en local sur votre ordinateur. Aucune donnée n\'est envoyée sur internet. Vos patrons, photos et notes restent uniquement sur votre machine.',
+    a: 'Vos données vous appartiennent. Dans sa version actuelle, Sewing Box fonctionne entièrement sur votre ordinateur — vos patrons, photos et notes ne quittent pas votre machine.',
   },
   {
     q: 'Sur quels systèmes d\'exploitation fonctionne l\'application ?',
-    a: 'Actuellement disponible sur Windows. Une version macOS est en cours de développement. L\'application nécessite Node.js et MongoDB installés localement.',
+    a: 'Sewing Box est actuellement disponible sur Windows.',
   },
   {
-    q: 'Puis-je importer mes patrons existants ?',
-    a: 'Oui ! Sewing Box dispose d\'une fonction d\'import pour récupérer vos données depuis un fichier JSON. Vous pouvez aussi ajouter vos patrons manuellement un par un.',
-  },
-  {
-    q: 'Comment sont stockées les images de mes patrons ?',
-    a: 'Les images sont stockées directement dans la base de données locale (MongoDB). Les PDFs sont sauvegardés dans un dossier sur votre ordinateur. Tout reste en local.',
+    q: 'Où Sewing Box enregistre-t-il mes données ?',
+    a: 'Tout est enregistré dans un dossier sur votre ordinateur. Vous aurez toujours la possibilité d\'accéder à vos documents sans passer par Sewing Box.',
   },
   {
     q: 'L\'application va-t-elle continuer à être mise à jour ?',
-    a: 'Oui ! Sewing Box est activement développé. De nouvelles fonctionnalités sont ajoutées régulièrement. Rejoignez la communauté Discord pour suivre les nouveautés et donner votre avis.',
+    a: 'Sewing Box est en phase de développement actif — tout n\'est pas encore terminé, et c\'est voulu ! De nouvelles fonctionnalités arrivent régulièrement. Les retours des utilisatrices sont précieux et contribuent directement à faire évoluer l\'application. Une communauté Discord est en préparation pour échanger et partager vos idées.',
+  },
+  {
+    q: 'Quels types de patrons peuvent être répertoriés ?',
+    a: 'Tous vos patrons sans exception ! PDFs numériques, patrons pochette, pages de magazines ou extraits de livres de couture — si vous l\'avez dans votre collection, Sewing Box peut le répertorier.',
+  },
+  {
+    q: 'Faut-il créer un compte ou partager ses créations ?',
+    a: 'Non. Sewing Box est un outil personnel — aucun compte, aucun profil, aucun fil d\'actualité. Vos créations vous appartiennent et restent privées. C\'est votre espace, rien qu\'à vous.',
+  },
+  {
+    q: 'Faut-il être connectée à internet pour utiliser Sewing Box ?',
+    a: 'Non. Sewing Box fonctionne entièrement hors ligne. Pas besoin de connexion pour accéder à vos patrons, tissus ou projets — l\'application est disponible à tout moment, même sans internet.',
+  },
+  {
+    q: 'Comment contribuer à l\'amélioration de Sewing Box ?',
+    a: 'Vos retours sont la meilleure façon de faire grandir Sewing Box ! Si vous rencontrez un bug, avez une idée ou une suggestion, vous pouvez nous contacter directement via la page Contact. La communauté Discord en préparation sera aussi un espace dédié aux échanges et aux propositions.',
   },
 ]
 
