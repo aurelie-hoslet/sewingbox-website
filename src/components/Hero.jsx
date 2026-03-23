@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Text */}
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 bg-rose-light text-rose-dark text-sm font-bold px-4 py-1.5 rounded-full mb-6">
-            <span>✨</span> Application gratuite & locale
+            <span>✨</span> Votre collection, chez vous
           </div>
 
           <h1 className="text-5xl md:text-6xl leading-tight mb-6 text-bleu-dark">
@@ -21,26 +21,19 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-gray-600 font-body mb-8 leading-relaxed max-w-md">
-            Organisez vos patrons, tissus, projets et inspirations en un seul endroit.
-            100% local — vos données restent sur votre ordinateur.
+            Patrons, tissus, projets, boutiques, inspirations… tout ce qui nourrit votre passion, au même endroit.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#download" id="download"
               className="flex items-center justify-center gap-2 bg-rose text-white font-bold px-8 py-4 rounded-2xl text-lg shadow-lg hover:bg-rose-dark hover:shadow-xl transition-all hover:-translate-y-0.5 opacity-60 cursor-not-allowed pointer-events-none">
-              <span>⬇️</span> Télécharger gratuitement
+              <span>⬇️</span> Essayer Sewing Box
               <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full ml-1">Bientôt</span>
             </a>
             <a href="#features"
               className="flex items-center justify-center gap-2 border-2 border-bleu text-bleu font-bold px-8 py-4 rounded-2xl text-lg hover:bg-bleu hover:text-white transition-all hover:-translate-y-0.5">
               Découvrir <span>→</span>
             </a>
-          </div>
-
-          <div className="mt-10 flex items-center gap-6 text-sm text-gray-500">
-            <div className="flex items-center gap-1.5"><span>🪟</span> Windows</div>
-            <div className="flex items-center gap-1.5"><span>🍎</span> macOS <span className="text-xs text-gray-400">(bientôt)</span></div>
-            <div className="flex items-center gap-1.5"><span>🔒</span> Données locales</div>
           </div>
         </div>
 
@@ -50,11 +43,10 @@ export default function Hero() {
             {/* Main window mockup */}
             <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
               {/* Window chrome */}
-              <div className="bg-bleu-dark px-4 py-3 flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
-                <span className="ml-3 text-white/60 text-xs font-body">📐 Sewing Box</span>
+              <div className="bg-bleu-dark px-4 py-3 flex items-center gap-3">
+                <div className="h-2.5 w-16 bg-white/20 rounded-full" />
+                <span className="text-white/60 text-xs font-body mx-auto">📐 Sewing Box</span>
+                <div className="w-16" />
               </div>
 
               {/* App content mockup */}
@@ -111,10 +103,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Floating badges */}
-            <div className="absolute -top-4 -right-4 bg-menthe text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg animate-bounce">
-              🎉 Gratuit !
-            </div>
+            {/* Floating badge */}
             <div className="absolute -bottom-4 -left-4 bg-lavande text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
               🔒 100% local
             </div>
