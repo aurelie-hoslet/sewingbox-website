@@ -1,5 +1,14 @@
 const screens = [
   {
+    title: 'Accueil',
+    desc: 'Vue d\'ensemble de toute votre collection en un coup d\'œil.',
+    img: '/screenshots/accueil.png',
+    emoji: '🏠',
+    color: 'from-rose-light/60 to-bleu-light/30',
+    accent: 'bg-rose',
+    wide: true,
+  },
+  {
     title: 'Les Patrons',
     desc: 'Vue en cartes de tous vos patrons avec filtres avancés, favoris et statut.',
     img: '/screenshots/patrons.png',
@@ -52,7 +61,7 @@ export default function Screenshots() {
 
         <div className="grid sm:grid-cols-2 gap-6">
           {screens.map((s) => (
-            <div key={s.title} className={`bg-gradient-to-br ${s.color} rounded-3xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-shadow`}>
+            <div key={s.title} className={`bg-gradient-to-br ${s.color} rounded-3xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-shadow ${s.wide ? 'sm:col-span-2' : ''}`}>
               <div className="rounded-2xl aspect-video overflow-hidden mb-4 border border-white/80">
                 <img src={s.img} alt={s.title} className="w-full h-full object-cover object-top" />
               </div>
