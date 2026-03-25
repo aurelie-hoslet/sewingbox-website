@@ -1,4 +1,25 @@
+import { useEffect, useState } from 'react'
+
+function useDownloadCount() {
+  const [count, setCount] = useState(null)
+
+  useEffect(() => {
+    fetch('https://api.github.com/repos/aurelie-hoslet/patrontheque/releases')
+      .then(r => r.json())
+      .then(releases => {
+        const total = releases.reduce((sum, release) =>
+          sum + release.assets.reduce((s, a) => s + a.download_count, 0), 0)
+        setCount(total)
+      })
+      .catch(() => {})
+  }, [])
+
+  return count
+}
+
 export default function Footer() {
+  const downloadCount = useDownloadCount()
+
   return (
     <footer id="footer" className="bg-bleu-dark text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
@@ -45,6 +66,17 @@ export default function Footer() {
                   <div className="text-white/50 text-xs">Envoyer un message</div>
                 </div>
               </a>
+            </div>
+          </div>
+
+          {/* Stats */}
+          <div>
+            <h4 className="font-display text-lg mb-4 text-menthe">En chiffres</h4>
+            <div className="bg-white/10 rounded-2xl px-4 py-3 w-fit">
+              <div className="text-3xl font-display text-white">
+                {downloadCount !== null ? downloadCount.toLocaleString('fr-FR') : '—'}
+              </div>
+              <div className="text-white/50 text-xs mt-0.5">téléchargements</div>
             </div>
           </div>
 
