@@ -2,6 +2,7 @@ const screens = [
   {
     title: 'Les Patrons',
     desc: 'Vue en cartes de tous vos patrons avec filtres avancés, favoris et statut.',
+    img: '/screenshots/patrons.png',
     emoji: '🎀',
     color: 'from-rose-light to-rose/10',
     accent: 'bg-rose',
@@ -9,6 +10,7 @@ const screens = [
   {
     title: 'Gestion de Tissus',
     desc: 'Votre stash complet avec photos, métrages et caractéristiques de chaque tissu.',
+    img: '/screenshots/tissus.png',
     emoji: '🧵',
     color: 'from-bleu-light/40 to-menthe-light/30',
     accent: 'bg-bleu',
@@ -16,14 +18,16 @@ const screens = [
   {
     title: 'Suivi de Projets',
     desc: 'Étapes de couture, statut, tissus utilisés et patrons associés à chaque projet.',
+    img: '/screenshots/projets.png',
     emoji: '📋',
     color: 'from-menthe-light to-bleu-light/20',
     accent: 'bg-menthe',
   },
   {
-    title: 'Inspirations',
-    desc: 'Sauvegardez vos inspirations avec liens, images et notes pour ne rien oublier.',
-    emoji: '✨',
+    title: 'Wish List',
+    desc: 'Vos envies créatives avec aperçu automatique des liens, priorités et notes.',
+    img: '/screenshots/wishlist.png',
+    emoji: '🔖',
     color: 'from-lavande-light to-peche-light/30',
     accent: 'bg-lavande',
   },
@@ -49,10 +53,8 @@ export default function Screenshots() {
         <div className="grid sm:grid-cols-2 gap-6">
           {screens.map((s) => (
             <div key={s.title} className={`bg-gradient-to-br ${s.color} rounded-3xl p-6 border border-white/80 shadow-sm hover:shadow-md transition-shadow`}>
-              {/* Placeholder screenshot */}
-              <div className="bg-white/60 backdrop-blur rounded-2xl aspect-video flex flex-col items-center justify-center gap-3 mb-4 border border-white/80">
-                <span className="text-6xl">{s.emoji}</span>
-                <span className="text-gray-400 text-sm font-body italic">Screenshot à venir</span>
+              <div className="rounded-2xl aspect-video overflow-hidden mb-4 border border-white/80">
+                <img src={s.img} alt={s.title} className="w-full h-full object-cover object-top" />
               </div>
               <div className="flex items-start gap-3">
                 <div className={`${s.accent} text-white text-xs font-bold px-3 py-1 rounded-full mt-0.5 shrink-0`}>
