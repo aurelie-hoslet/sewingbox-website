@@ -18,6 +18,11 @@ export default function Footer() {
               className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white/80 text-xs font-bold px-3 py-1.5 rounded-full w-fit transition-colors">
               🔓 Open Source
             </a>
+            <div className="mt-4">
+              <a href='https://ko-fi.com/F1F11WJ643' target='_blank' rel="noopener noreferrer">
+                <img height='36' style={{ border: 0, height: 36 }} src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' alt='Buy Me a Coffee at ko-fi.com' />
+              </a>
+            </div>
           </div>
 
           {/* Links */}
