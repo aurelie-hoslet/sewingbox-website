@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: 'Comment contribuer à l\'amélioration de Sewing Box ?',
-    a: 'Vos retours sont la meilleure façon de faire grandir Sewing Box ! Si vous rencontrez un bug, avez une idée ou une suggestion, vous pouvez nous contacter directement via la page Contact. La communauté Discord en préparation sera aussi un espace dédié aux échanges et aux propositions.',
+    a: 'Vos retours sont la meilleure façon de faire grandir Sewing Box ! Si vous rencontrez un bug, avez une idée ou une suggestion, vous pouvez me contacter directement via la page Contact. La communauté Discord en préparation sera aussi un espace dédié aux échanges et aux propositions.',
   },
 ]
 
