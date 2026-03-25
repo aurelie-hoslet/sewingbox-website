@@ -26,7 +26,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#download"
+          <a href="https://github.com/aurelie-hoslet/patrontheque/releases/download/v1.2.0/Sewing.Box.Setup.1.2.0.exe"
             className="bg-rose text-white text-sm font-bold px-5 py-2 rounded-full hover:bg-rose-dark transition-colors shadow-md">
             Télécharger
           </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#download" onClick={() => setOpen(false)}
+          <a href="https://github.com/aurelie-hoslet/patrontheque/releases/download/v1.2.0/Sewing.Box.Setup.1.2.0.exe" onClick={() => setOpen(false)}
             className="bg-rose text-white font-bold px-5 py-2 rounded-full text-center">
             Télécharger
           </a>
