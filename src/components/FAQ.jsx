@@ -82,7 +82,7 @@ export default function FAQ() {
         <div className="mt-10 text-center text-gray-500 font-body text-sm">
           Vous avez d'autres questions ?{' '}
           <a href="#footer" className="text-rose font-bold hover:underline">
-            Contactez-nous →
+            Contactez-moi →
           </a>
         </div>
 
