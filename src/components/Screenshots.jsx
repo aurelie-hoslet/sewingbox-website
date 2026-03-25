@@ -67,15 +67,6 @@ export default function Screenshots() {
           ))}
         </div>
 
-        {/* CTA banner */}
-        <div className="mt-12 bg-gradient-to-r from-rose to-bleu rounded-3xl p-8 text-white text-center">
-          <h3 className="text-3xl font-display mb-3">Prête à organiser votre couture ?</h3>
-          <p className="font-body opacity-80 mb-6">Téléchargement gratuit, aucun compte requis.</p>
-          <button disabled
-            className="bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-3 rounded-2xl cursor-not-allowed opacity-70 transition-all">
-            ⬇️ Télécharger — Disponible bientôt
-          </button>
-        </div>
 
       </div>
     </section>

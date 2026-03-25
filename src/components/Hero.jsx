@@ -34,6 +34,10 @@ export default function Hero() {
               Découvrir <span>→</span>
             </a>
           </div>
+
+          <p className="mt-4 text-sm text-gray-500 font-body leading-relaxed max-w-md bg-orange-50 border border-orange-200 rounded-2xl px-4 py-3">
+            ⚠️ Windows peut afficher un avertissement de sécurité lors de l'installation. C'est tout à fait normal : Sewing Box est un projet open source créé par une couturière passionnée, pas par une développeuse professionnelle. Pour continuer : cliquez sur <strong>« Informations complémentaires »</strong> puis <strong>« Exécuter quand même »</strong>. Le code source est entièrement disponible sur GitHub si vous souhaitez le consulter.
+          </p>
         </div>
 
         {/* Mockup */}

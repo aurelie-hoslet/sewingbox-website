@@ -13,9 +13,11 @@ export default function Footer() {
             <p className="text-white/60 font-body text-sm leading-relaxed mb-4">
               Votre boîte à couture numérique. Gratuite, locale, et faite avec ❤️ pour les couturières passionnées.
             </p>
-            <div className="flex items-center gap-2 bg-white/10 text-white/80 text-xs font-bold px-3 py-1.5 rounded-full w-fit">
+            <a href="https://github.com/aurelie-hoslet/sewingbox-website"
+              target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white/80 text-xs font-bold px-3 py-1.5 rounded-full w-fit transition-colors">
               🔓 Open Source
-            </div>
+            </a>
           </div>
 
           {/* Links */}
